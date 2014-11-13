@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Galeria de Imagens Bootstrap</title>
+<?php 
+	$title = "Music Beast - Index";
+	include "./assets/php/head.php";
+?>
 
-    <!-- Bootstrap -->
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-  </head>
   <body>
 
-    <form action="upload.php" method="post" enctype="multipart/form-data">
-      <fieldset>
-        <legend>Upload</legend>
-        <label for="userFile">Selecione a imagem: </label>
-        <input type="file" size="40" name="userFile" id="userFile"/><br/>
-        <br/>
-        <label for="altText">Descrição da Imagem</label>
-        <input type="text" size="60" name="altText" id="altText"/><br/>
-        <br/>
-        <input type="submit" value="Upload"/>
-      </fieldset>
-    </form>
-    
-    <!--Javascript-->
-    <script src="./assets/js/jquery-2.1.1.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
+    <div class="container">
+	
+		<div class="img-container" id="logo-full-container">
+			<img id="logo-full" class="img-resize" src="./assets/img/full-logo.png">
+		</div>
+		
+		  <!-- Example row of columns -->
+		  <div class="row">
+			<div class="col-md-8">
+			  <h2>Heading</h2>
+			  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			</div>
+			
+			<div class="col-md-4">
+			  <h2>Heading</h2>
+			  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			  <p><a class="btn dtn-default" href="./home.php" role="button"><span class="glyphicon glyphicon-home"></span> Entrar</a></p>
+		   </div>
+		   
+		  </div><!--/row-->
+	
+		  <hr>
+	  
+    </div> <!-- /container -->
+	
+	<?php
+		include "./assets/php/footer.php";
+	?>
+	
   </body>
 </html>

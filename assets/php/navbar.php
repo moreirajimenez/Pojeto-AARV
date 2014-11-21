@@ -1,3 +1,7 @@
+<?php 
+	include "./db_connection/session.php";
+?>
+
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
 	<div class="navbar-header">
@@ -9,8 +13,21 @@
 	  </button>
 	</div>
 	<div id="navbar" class="navbar-collapse collapse">
-		<button type="button" id="login-btn" class="btn btn-primary" data-toggle="modal" data-target="#login-window">Login</button>
-		<button type="button" id="register-btn" class="btn btn-primary" data-toggle="modal" data-target="#register-window">Register</button>
+	
+		<a class="navbar-brand" href="./home.php">Music Beast</a>
+		<?php
+			if (!isset($_SESSION['session_user'])) {
+				echo
+				'<button type="button" id="login-btn" class="btn btn-primary" data-toggle="modal" data-target="#login-window">Login</button>'.
+				'<button type="button" id="register-btn" class="btn btn-primary" data-toggle="modal" data-target="#register-window">Register</button>';
+			} else {
+				echo 
+				'<div id="user-container">'.
+					'<div id="user">Bem vindo, '.$_SESSION['session_user'].'</div>'.
+					'<a href="./db_connection/logout.php" type="button" id="logout-btn" class="btn btn-primary">Logout</a>'.
+				'</div>';
+			}
+		?>
 	</div><!--/.navbar-collapse -->
   </div>
 </nav>

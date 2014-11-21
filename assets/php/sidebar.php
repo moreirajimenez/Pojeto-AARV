@@ -1,0 +1,9 @@
+<div class="col-md-2" id="sidebar" role="navigation">
+	<div class="list-group" id="sidebar-list">
+		<a href="./hardrock.php" class="list-group-item">Hard Rock</a>
+		<a href="./pop.php" class="list-group-item">Pop</a>
+		<a href="./indie.php" class="list-group-item">Indie</a>
+		<a href="./eletronica.php" class="list-group-item">Eletrônica</a>
+		<a href="./rap.php" class="list-group-item">Rap</a>
+	</div><!--/list-group-->
+</div><!--/sidebar-->

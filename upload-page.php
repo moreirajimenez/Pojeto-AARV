@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <?php 
 	$title = "Music Beast - Home";
 	include "./assets/php/head.php";
@@ -18,16 +18,23 @@
 		</div>
 	
 	</div><!--/container-->
-
+	
 	 <?php 
 		include "./assets/php/sidebar.php";
 	 ?>
 	 
-	<div class="col-md-10" class="conteudo">
-		<form id="post-form" method="post" action="./db_connection/make_post.php">
-			<textarea id="post-text" name="post"></textarea>
-			
-			<div id="form-btn-container">
+	<div id="titulo">Faça o Upload de suas imagens</div>
+	
+	<div class="col-md-10 conteudo conteudo-home">
+		<form action="upload.php" method="post" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Upload</legend>
+				<label for="Arquivo">Selecione a imagem: </label>
+				<input type="file" size="40" name="userFile" id="userFile"/><br/>
+				<br/>
+				<label for="altText">Descrição da Imagem:</label>
+				<input type="text" size="60" name="altText" id="altText"/><br/>
+				<br/>
 				<select id="post-genero" name="genero">
 					<option value="HARDROCK">Hard Rock</option>
 					<option value="POP">Pop</option>
@@ -35,11 +42,17 @@
 					<option value="ELETRONICA">Eletrônica</option>
 					<option value="RAP">Rap</option>
 				</select>
-	  
-				<input type ="submit" value ="Criar Post" id="post-btn" />
-			</div>
+				<input type="submit" value="Upload"/>
+			</fieldset>
 		</form>
-	</div>
+	</div><!--conteudo-->
 	
+	<!--footer-->
+	<?php
+		$firstLoginTry=true;
+		include "./assets/php/modal.php";
+		include "./assets/php/footer.php";
+	?>	
+
   </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <?php 
 	$title = "Music Beast - Index";
@@ -14,7 +14,7 @@
 		</div>
 		
 		  <!-- Row -->
-		  <div class="row">
+		  <div class="row index-content">
 		  
 			<div class="col-md-8">
 			  <h2>Sobre o Site</h2>

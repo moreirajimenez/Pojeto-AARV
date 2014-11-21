@@ -25,7 +25,6 @@
 	<div class="col-md-10" class="conteudo">
  			<div id="profile-description">
 				<?php
-				
 					if (!isset($_SESSION['session_user'])) {
 						echo
 						'Você não está logado.';
@@ -37,15 +36,13 @@
 						</p>';
 					}
 				?>
-
-				
-
 			</div>
 
 	</div><!--conteudo-->
 	
 	<!--footer-->
 	<?php
+		$firstLoginTry=true;
 		include "./assets/php/footer.php";
 		include "./assets/php/modal.php";
 	?>	

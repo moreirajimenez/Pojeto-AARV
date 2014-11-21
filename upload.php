@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php 
-	$title = "Music Beast - Pop";
+	$title = "Music Beast - Home";
 	include "./assets/php/head.php";
 ?>
 
@@ -20,22 +20,23 @@
 	</div><!--/container-->
 	
 	 <?php 
-	 	$genero = "POP";
 		include "./assets/php/sidebar.php";
 	 ?>
-	<div id="titulo">Notícias de Pop</div>
-	<div class="col-md-10" class="conteudo">
+	 
+	<div id="titulo">Upload de Imagem</div>
+	
+	<div class="col-md-10 conteudo conteudo-home">
 		<?php
-			include "./db_connection/db.php";
-			include "./db_connection/listar-posts.php";
+			include './db_connection/db.php';
+			include './db_connection/fazer-upload.php';
 		?>
 	</div><!--conteudo-->
 	
 	<!--footer-->
 	<?php
 		$firstLoginTry=true;
-		include "./assets/php/footer.php";
 		include "./assets/php/modal.php";
+		include "./assets/php/footer.php";
 	?>	
 
   </body>

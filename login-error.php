@@ -23,30 +23,23 @@
 	 ?>
 	
 	<div class="col-md-10" class="conteudo">
- 			<div id="profile-description">
-				<?php
-				
-					if (!isset($_SESSION['session_user'])) {
-						echo 
-						'<p>
-							Usuário ou senha incorretos, tente novamente.
-						</p>';
-					} else {
-						header("Location: ./profile.php");;
-					}
-				?>
-
-				
-
-			</div>
-
+		<?php
+			include "./db_connection/db.php";
+			$genero = null;
+			include "./db_connection/listar-posts.php";
+		?>
 	</div><!--conteudo-->
 	
 	<!--footer-->
 	<?php
+		$firstLoginTry=false;
 		include "./assets/php/footer.php";
 		include "./assets/php/modal.php";
-	?>	
+	?>
+	
+	<script>
+		$('#login-window').modal('show');
+	</script>
 
   </body>
 </html>

@@ -5,5 +5,6 @@
 	$dbname = 'musicbeastdb';
 	
 	$connection = mysql_connect($url, $username, $password);
-	$db = mysql_select_db($dbname, $connection);
+	$db = mysql_select_db($dbname);
+	
 ?>

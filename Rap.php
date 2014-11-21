@@ -20,19 +20,20 @@
 	</div><!--/container-->
 	
 	 <?php 
+	 	$genero = "RAP";
 		include "./assets/php/sidebar.php";
 	 ?>
-	
+	<div id="titulo">Notícias de Rap</div>
 	<div class="col-md-10" class="conteudo">
 		<?php
 			include "./db_connection/db.php";
-			$genero = "RAP";
 			include "./db_connection/listar-posts.php";
 		?>
 	</div><!--conteudo-->
 	
 	<!--footer-->
 	<?php
+		$firstLoginTry=true;
 		include "./assets/php/footer.php";
 		include "./assets/php/modal.php";
 	?>	

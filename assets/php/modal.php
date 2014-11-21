@@ -11,6 +11,14 @@
 				
 				<input class="submit-btn" name="submit" type="submit" value="Login">
 			</form>
+			<?php
+				if ($firstLoginTry==false) {
+					echo 
+					'<p>
+						Usuário ou senha incorretos, tente novamente.
+					</p>';
+				}
+			?>
 		</div><!--modal-content-->
 	</div><!--modal-dialog-->
 </div><!--modal-->

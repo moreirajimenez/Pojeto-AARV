@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php 
-	$title = "Music Beast - Pop";
+	$title = "Music Beast - Indie";
 	include "./assets/php/head.php";
 ?>
 
@@ -20,10 +20,10 @@
 	</div><!--/container-->
 	
 	 <?php 
-	 	$genero = "POP";
+	 	$genero = "INDIE";
 		include "./assets/php/sidebar.php";
 	 ?>
-	<div id="titulo">Notícias de Pop</div>
+	<div id="titulo">Notícias de Indie</div>
 	<div class="col-md-10" class="conteudo">
 		<?php
 			include "./db_connection/db.php";

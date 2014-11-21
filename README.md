@@ -1,13 +1,10 @@
-Pojeto-AARV
-===========
+Music Beast - TecWeb II
 
-2G12 Projeto Site 2º semestre 2014
 
-Título:""
+Grupo:
 
-Tema: Música
+Arthur Ferreira
+Alexandre Pucci
+Vitor Coyado
+Rodrigo Jimenez
 
-Integrantes: Alexandre Pucci,
-             Arthur Ferreira,
-             Rodrigo Jimenez,
-             Vitor Coyado,

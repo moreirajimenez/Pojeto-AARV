@@ -20,21 +20,23 @@
 	</div><!--/container-->
 	
 	 <?php 
+		$genero = "ELETRONICA";
 		include "./assets/php/sidebar.php";
 	 ?>
-	
+	<div id="titulo">Notícias de Eletrônica</div>
 	<div class="col-md-10" class="conteudo">
 		<?php
 			include "./db_connection/db.php";
-			$genero = "ELETRONICA";
+
 			include "./db_connection/listar-posts.php";
 		?>
 	</div><!--conteudo-->
 	
 	<!--footer-->
 	<?php
-		include "./assets/php/footer.php";
+		$firstLoginTry=true;
 		include "./assets/php/modal.php";
+		include "./assets/php/footer.php";
 	?>	
 
   </body>

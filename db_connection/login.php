@@ -17,8 +17,10 @@
 	$rows = mysql_num_rows($result);
 	
 	if ($rows == 1) {
+		
 		$_SESSION['session_user']=$username;
 		$_SESSION['session_password']=$password;
+				
 		header("location: ../profile.php");
 	} else {
 		//Login Invalido

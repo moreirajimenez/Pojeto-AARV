@@ -22,8 +22,10 @@
 	 <?php 
 		include "./assets/php/sidebar.php";
 	 ?>
+	 
+	<div id="titulo">Últimas Notícias do Mundo da Música</div>
 	
-	<div class="col-md-10" class="conteudo">
+	<div class="col-md-10 conteudo conteudo-home">
 		<?php
 			include "./db_connection/db.php";
 			$genero = null;
@@ -33,8 +35,9 @@
 	
 	<!--footer-->
 	<?php
-		include "./assets/php/footer.php";
+		$firstLoginTry=true;
 		include "./assets/php/modal.php";
+		include "./assets/php/footer.php";
 	?>	
 
   </body>

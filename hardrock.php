@@ -20,21 +20,25 @@
 	</div><!--/container-->
 	
 	 <?php 
+	 	$genero = "HARDROCK";
 		include "./assets/php/sidebar.php";
 	 ?>
+	 
+	<div id="titulo">Notícias de Hard Rock</div>
 	
 	<div class="col-md-10" class="conteudo">
 		<?php
 			include "./db_connection/db.php";
-			$genero = "HARDROCK";
 			include "./db_connection/listar-posts.php";
 		?>
+	</div><!--meh-->
 	</div><!--conteudo-->
 	
 	<!--footer-->
 	<?php
-		include "./assets/php/footer.php";
+		$firstLoginTry=true;
 		include "./assets/php/modal.php";
+		include "./assets/php/footer.php";
 	?>	
 
   </body>
